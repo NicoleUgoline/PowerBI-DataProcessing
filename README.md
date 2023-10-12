@@ -2,6 +2,13 @@
 ## Descrição
 O projeto "Processando e Transformando Dados com PowerBI" é uma iniciativa dedicada a explorar as capacidades avançadas de transformação e análise de dados oferecidas pela plataforma PowerBI. O objetivo é demonstrar como o PowerBI pode ser uma ferramenta poderosa para processar e refinar dados brutos, convertendo-os em insights valiosos e visuais informativos.
 
+## Principais Objetivos:
+- Utilizar as funcionalidades robustas de transformação de dados do Power Query para preparar os dados para análise.
+- Criar visualizações dinâmicas e interativas que apresentem de forma eficaz os padrões e tendências nos dados.
+- Explorar técnicas avançadas de modelagem e cálculos, otimizando a interpretação dos dados.
+- Integrar fontes de dados variadas para criar uma visão consolidada e abrangente do cenário analisado.
+- Fomentar o aprendizado colaborativo e a troca de conhecimentos entre os entusiastas de análise de dados e o ecossistema PowerBI.
+
 ## Etapas Aplicadas:
 - Renomeação de Colunas: Inicialmente, as colunas foram renomeadas visando aprimorar a legibilidade dos dados, facilitando tanto a interpretação humana quanto a utilização eficaz em elementos gráficos.
 - Padronização de Valores Monetários: Foi realizada uma modificação nos valores monetários, convertendo-os para o formato decimal fixo. Essa padronização torna a manipulação e análise mais consistente.
@@ -12,7 +19,6 @@ O projeto "Processando e Transformando Dados com PowerBI" é uma iniciativa dedi
 - Separação da Coluna de Endereço: A coluna "Endereço" na tabela de funcionários foi separada, possivelmente para uma melhor organização dos dados e facilitar futuras consultas relacionadas ao endereço.
 - Consulta de Recuperação de Encarregado e Gerente:
 Foi implementada uma consulta SQL que recupera os nomes do encarregado e seu respectivo gerente. Isso é valioso para entender a hierarquia e as relações dentro da organização
-
 ```sql
 SELECT
 e.Fname || ' ' || COALESCE(e.Minit || '. ', '') || e.Lname AS "EmployeeName",
